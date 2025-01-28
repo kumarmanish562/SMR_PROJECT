@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 
 # Configure Gemini API (replace with your actual API key)
-genai.configure(api_key='AIzaSyA1kHdT3YFSOHXCyOHiM8XFnmU7DdZi1Ns')
+genai.configure(api_key='')
 model = genai.GenerativeModel('gemini-pro')
 
 # Language mapping
