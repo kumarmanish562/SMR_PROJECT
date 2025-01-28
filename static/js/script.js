@@ -230,3 +230,25 @@ ScrollTrigger.create({
   start: `top top`,
   end: `300% top`,
 });
+
+ // Add functionality to thebutton
+ document.getElementById('translateButton').addEventListener('click', function() {
+  window.location.href = '/translate';
+}); 
+// Dropdown hover functionality for TailwindCSS
+document.querySelectorAll('.dropdown').forEach(dropdown => {
+  dropdown.addEventListener('mouseenter', () => {
+      dropdown.querySelector('.dropdown-menu').classList.remove('hidden');
+  });
+  dropdown.addEventListener('mouseleave', () => {
+      dropdown.querySelector('.dropdown-menu').classList.add('hidden');
+  });
+});
+// Add functionality to thebutton
+ document.getElementById('btn1').addEventListener('click', function() {
+  window.location.href = '/quote';
+}); 
+// Add functionality to thebutton
+ document.getElementById('btn2').addEventListener('click', function() {
+  window.location.href = '/contact';
+}); 

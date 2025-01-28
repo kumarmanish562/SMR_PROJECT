@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div id="nav">
+        <div class="center-nav">
+            <a href="{{ url_for('home') }}" class="nav-link ">Home</a>
+
+            <!-- Dropdown for Service -->
+            <div class="dropdown dropdown-service">
+                <a href="{{ url_for('service') }}" class="nav-link active">Service</a>
+                <div class="dropdown-menu dropdown-grid">
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('medical') }}">Medical Translation Services</a>
+                        <a href="{{ url_for('legal') }}">Legal Translation Services</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('financial') }}">Financial Translation Services</a>
+                        <a href="{{ url_for('certificate') }}">Certificate Translation Services</a>
+                        <a href="{{ url_for('marketing') }}">Marketing Translation Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dropdown for Language -->
+            <div class="dropdown service-language">
+                <a href="{{ url_for('language') }}" class="nav-link ">Language</a>
+                <div class="dropdown-menu dropdown-grid">
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('hindi') }}">Hindi Language</a>
+                        <a href="{{ url_for('english') }}">English Language</a>
+                        <a href="{{ url_for('tamil') }}">Tamil Language</a>
+                        <a href="{{ url_for('punjabi') }}">Punjabi Language</a>
+                        <a href="{{ url_for('kannada') }}">Kannada Language</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('telugu') }}">Telugu Language</a>
+                        <a href="{{ url_for('malayalam') }}">Malayalam Language</a>
+                        <a href="{{ url_for('bengali') }}">Bengali Language</a>
+                        <a href="{{ url_for('marathi') }}">Marathi Language</a>
+                        <a href="{{ url_for('gujarati') }}">Gujarati Language</a>
+                        <a href="{{ url_for('odia') }}">Odia Language</a>
+                        <a href="{{ url_for('assamese') }}">Assamese Language</a>
+                        <a href="{{ url_for('sanskrit') }}">Sanskrit Language</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Translate Now Button -->
+        <button id="translateButton">Translate Now</button>
+    </div>
+
+    <!-- Hero Section with Image -->
+    <div id="hero">
+        <div class="hero-content">
+            <h1>Markrting Translation Services</h1>
+        </div>
+    </div>
+
+    <!-- Breadcrumbs Box (Horizontal) -->
+    <div id="breadcrumbs-box">
+      <div id="breadcrumbs">
+          <a href="{{ url_for('home') }}">Home</a> >   <a href="{{ url_for('service') }}">Services</a  > > <a href="{{ url_for('marketing') }}">Marketing Translation Services</a> 
+      </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="main-content">
+      
+        <div class="content-wrapper">
+            <!-- Left Section with Service List -->
+            <div class="left-section">
+                <ul>
+                  <li><a href="{{ url_for('medical') }}" >Medical Translation Services</a></li>
+                  <li><a href="{{ url_for('legal') }}">Legal Translation Services</a></li>
+                  <li><a href="{{ url_for('financial') }}">Financial Translation Services</a></li>
+                  <li><a href="{{ url_for('certificate') }}" >Certificate Translation Services</a></li>
+                  <li>  <a href="{{ url_for('marketing') }}" class="active">Marketing Translation Services</a></li>
+                </ul>
+            </div>
+
+         <!-- Right Section for Main Content -->
+<div class="right-section">
+  <h2>Our Specialization</h2>
+  <p>The marketing world is ever-changing – trends and technology keep updating. With global marketing advancement, your business also needs to stay up to date with new concepts and industry trends. To educate your customers about the latest technology and trends, it is essential to speak in their language. Here arises the need for marketing translation services.</p>
+  
+  <p>Marketing translation is the process of translating marketing materials, taking into consideration the cultural preferences of the target audience. A marketing translator has knowledge of different writing styles and takes into account the specific culture of the target locale while performing translations.</p>
+
+  <p>57% of businesses have acquired a customer through their company blog. (wpforms)</p>
+
+  <h3>Marketing Translation - Things You Should Know</h3>
+  <ul>
+      <li><strong>Local Cultural Context:</strong> Marketing translation must have local appeal. If the marketing translator is from the target country, they will understand the local culture easily. They will be aware of images and expressions that may not be acceptable in the target culture. This helps in adapting the marketing content appropriately.</li>
+      <li><strong>Tricky Slogans:</strong> Slogans are carefully crafted for repetition so that they are memorable. However, slogans can be tricky to translate, and require special attention and care to maintain their effectiveness across different markets.</li>
+      <li><strong>Tone and Style:</strong> Tone and style are important elements in marketing translations. It’s vital to understand the target audience before beginning the translation process, ensuring the translation resonates with the audience through either a formal or informal approach.</li>
+      <li><strong>Voice and Value of the Brand:</strong> Maintaining the voice of the brand while adapting the content to local culture is key. A translator must choose the right words to convey the same message, while staying true to the brand’s identity.</li>
+      <li><strong>Colors and Imagery:</strong> Colors and imagery play a significant role in brand identity. Different cultures associate various colors with specific meanings (e.g., white is associated with peace in the West, but in parts of Asia, it may be seen as a color of misfortune). A translator must consider these cultural nuances when adapting the content.</li>
+  </ul>
+
+  <p>Google is responsible for 96% of all smartphone search traffic and 94% of total organic traffic. (seotribunal)</p>
+
+  <h3>Overview of Our Services</h3>
+  <ul>
+      <li>Advertisement</li>
+      <li>Website</li>
+      <li>Newsletter</li>
+      <li>Presentation</li>
+      <li>Brochure</li>
+      <li>Booklet</li>
+      <li>Market Research</li>
+      <li>White Papers</li>
+      <li>Case Studies</li>
+      <li>Business Card</li>
+      <li>Press Release</li>
+      <li>Product Catalog</li>
+  </ul>
+
+  <h3>Certified Marketing Translation Services</h3>
+  <p>Looking for professional & certified marketing translation services in India? You are at the right place.</p>
+  
+  <p>Bhasha Bharati is a marketing translation agency empowering organizations to communicate in over 100 languages. No matter the size of your business, we have your language needs covered. Trust our team of marketing experts, linguists, and other specialists to customize your marketing campaign to appeal to each one of your global audiences.</p>
+
+  <p>If you need professional marketing translation services and want to incorporate it into your project, contact Bhasha Bharati to get started.</p>
+
+  <p><a href="#">More - Guide to Marketing Translation</a></p>
+</div>
+
+
+    <!-- About Us Section -->
+    <div id="about-us">
+        <div class="content-wrapper">
+            <div class="column">
+                <h3>ABOUT US</h3>
+                <p>We are ISO 9001:2008, and DIN EN 1508 certified translation agency for maintaining quality standards.</p>
+            </div>
+            <div class="column">
+                <h3>Blog Posts</h3>
+                <ul class="blog-posts">
+                    <li><a href="#">How important is Translation in today’s globalized world?</a></li>
+                    <li><a href="#">7 Reasons why Translation plays an important role in Education</a></li>
+                    <li><a href="#">For Chalta hai translation, Go to Google translation</a></li>
+                    <li><a href="#">NAMO Campaign and Digital India</a></li>
+                    <li><a href="#">Can Rajini be the political ‘Thaliva’?</a></li>
+                    <li><a href="#">How to design website for driving sales?</a></li>
+                    <li><a href="#">Translation of Documents for Effective Business</a></li>
+                    <li><a href="#">Why Planning for website translation in Hindi will make great sense?</a></li>
+                    <li><a href="#">Digital India Demands Web Content in All Indian Languages</a></li>
+                    <li><a href="#">Digital India will grow with website localization</a></li>
+                    <li><a href="#">Drive the Digital India Wave</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>SERVICES & SOLUTIONS</h3>
+                <ul class="services-solutions">
+                    <li><a href="#">Translation Services</a></li>
+                    <li><a href="#">Localization Services</a></li>
+                    <li><a href="#">Interpretation Services</a></li>
+                    <li><a href="#">DTP Services</a></li>
+                    <li><a href="#">360° Language Solution</a></li>
+                    <li><a href="#">Document Translation</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Get Quote</h3>
+                <p>Register for any enquiry and job opportunities</p>
+                <p>Beyond Wordz | Shakti Enterprise</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Translation Services. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

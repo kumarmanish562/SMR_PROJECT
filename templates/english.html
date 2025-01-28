@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div id="nav">
+        <div class="center-nav">
+            <a href="{{ url_for('home') }}" class="nav-link ">Home</a>
+
+            <!-- Dropdown for Service -->
+            <div class="dropdown dropdown-service">
+                <a href="{{ url_for('service') }}" class="nav-link">Service</a>
+                <div class="dropdown-menu dropdown-grid">
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('medical') }}">Medical Translation Services</a>
+                        <a href="{{ url_for('legal') }}">Legal Translation Services</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('financial') }}">Financial Translation Services</a>
+                        <a href="{{ url_for('certificate') }}">Certificate Translation Services</a>
+                        <a href="{{ url_for('marketing') }}">Marketing Translation Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dropdown for Language -->
+            <div class="dropdown dropdown-language">
+                <a href="{{ url_for('language') }}" class="nav-link active">Language</a>
+                <div class="dropdown-menu dropdown-grid">
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('hindi') }}">Hindi Language</a>
+                        <a href="{{ url_for('english') }}">English Language</a>
+                        <a href="{{ url_for('tamil') }}">Tamil Language</a>
+                        <a href="{{ url_for('punjabi') }}">Punjabi Language</a>
+                        <a href="{{ url_for('kannada') }}">Kannada Language</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('telugu') }}">Telugu Language</a>
+                        <a href="{{ url_for('malayalam') }}">Malayalam Language</a>
+                        <a href="{{ url_for('bengali') }}">Bengali Language</a>
+                        <a href="{{ url_for('marathi') }}">Marathi Language</a>
+                        <a href="{{ url_for('gujarati') }}">Gujarati Language</a>
+                        <a href="{{ url_for('odia') }}">Odia Language</a>
+                        <a href="{{ url_for('assamese') }}">Assamese Language</a>
+                        <a href="{{ url_for('sanskrit') }}">Sanskrit Language</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Translate Now Button -->
+        <button id="translateButton">Translate Now</button>
+    </div>
+
+    <!-- Hero Section with Image -->
+    <div id="hero">
+        <div class="hero-content">
+           
+            <h1>English Translation</h1>
+        </div>
+    </div>
+
+    <!-- Breadcrumbs Box (Horizontal) -->
+    <div id="breadcrumbs-box">
+      <div id="breadcrumbs">
+          <a href="{{ url_for('home') }}">Home</a> > <a href="{{ url_for('service') }}">Services</a> > <span>Language</span>
+      </div>
+
+
+    <!-- Main Hindi Content Section -->
+    <div id="main-content">
+      
+        <div class="content-wrapper">
+            <!-- Left Section with Language List -->
+            <div class="left-section">
+                <ul>
+                    <li><a href="{{ url_for('hindi') }}" >Hindi Language</a></li>
+                    <li><a href="{{ url_for('english') }}" class="active">English Language</a></li>
+                    <li><a href="{{ url_for('tamil') }}">Tamil Language</a></li>
+                    <li><a href="{{ url_for('punjabi') }}">Punjabi Language</a></li>
+                    <li><a href="{{ url_for('kannada') }}">Kannada Language</a></li>
+                    <li><a href="{{ url_for('telugu') }}">Telugu Language</a></li>
+                    <li><a href="{{ url_for('malayalam') }}">Malayalam Language</a></li>
+                    <li><a href="{{ url_for('bengali') }}">Bengali Language</a></li>
+                    <li><a href="{{ url_for('marathi') }}">Marathi Language</a></li>
+                    <li><a href="{{ url_for('gujarati') }}">Gujarati Language</a></li>
+                    <li><a href="{{ url_for('odia') }}">Odia Language</a></li>
+                    <li><a href="{{ url_for('assamese') }}">Assamese Language</a></li>
+                    <li><a href="{{ url_for('sanskrit') }}">Sanskrit Language</a></li>
+                </ul>
+            </div>
+
+            
+    
+ 
+    <!-- Right Section for Main Content -->
+<div class="right-section">
+  <h2>English is the First and Most Important Second Language for All Non-Native English Speakers</h2>
+  <p>Europe has 24 languages as the official language of the European Union. English is the link language and hence cannot be ignored for translation purposes. We are one of the most trusted translation service providers from Mumbai, India for translation from any language to English. For over 50 years, we have been serving many companies, big and small, for their translation requirements into English. Our costs are much lower than any of the professional translation service providers in Europe due to low operating costs.</p>
+  
+  <p>Due to our experience of over 50 years in translation service from Mumbai, India, we are able to provide customized language solutions for many European and Western countries who want to penetrate the Indian Market. We have provided Translation, Interpretation, Website Localization, Voice Over, and Sub-titling in many European Languages. We have created separate project management teams for each of the below-mentioned services.</p>
+  
+  <h3>English Translation Services</h3>
+  <p>Whether it is a personal letter, certificates, visa forms, business letters, sales promotional and marketing material, translation into English is a must for most of the European countries. This is because English is the second best common language for business or for travel.</p>
+  
+  <p>Our English language translation service is designed in such a way that at any given point of time when you need translation from any of the European languages to English or from English to another European language, we are able to meet the need. We have professional translators whose mother tongue is any one of the European languages and have a good command of English due to their graduation in English literature.</p>
+  
+  <p>English acts as a link language and therefore translation from any language to language must first be translated into English and then from English to all European languages.</p>
+  
+  <h3>Importance of English Language Translation</h3>
+  <p>The importance of English language for business communication cannot be underestimated even though people prefer to get their message in their native language. English is a common language easily understood worldwide for business-to-business communication. So, it becomes the first step for a European company having German, French, Spanish, Portuguese, Russian, Italian, or any other non-English language document to get it translated into English to transact with the outside world.</p>
+  
+  <p>The English language is currently estimated as the third largest mother tongue in the world. However, it is unquestionably the first and most popular second-language. In fact, most of the information that circulates in our world – mail, radio, cable, internet, etc. – is in English. This language has become the working language or bridge language of our time.</p>
+  
+  <h3>Break the Language Barrier</h3>
+  <p>Globalize your communication in English and then localize by translating in the language of your target market. Culturally connect with Indian, Asian, and European language-speaking populations.</p>
+  
+  <h3>How We Can Help You in Building a Global Language Strategy</h3>
+  <p>We are the language people for global companies for their translation, localization, and interpretation requirements from any language to any language. We also serve advertising agencies and FMCG companies for marketing translation of copy material and trans-creation of creative headlines. Pharmaceutical companies trust us for medical translation of research reports and clinical trial forms in all Indian languages.</p>
+  
+  <h3>Our Range of Services Include:</h3>
+  <ul>
+    <li>✅ Translators with domain knowledge</li>
+    <li>✅ Project Managers with experience</li>
+    <li>✅ Technology usage for accuracy, speed, and savings</li>
+    <li>✅ Industry orientation</li>
+    <li>✅ Transparency</li>
+    <li>✅ Confidentiality</li>
+    <li>✅ Competitive pricing</li>
+    <li>✅ Specialist agency for translation into all Indian Languages</li>
+  </ul>
+
+  <h3>Translation Services</h3>
+  <ul>
+    <li>✅ Document Translation: Letters, visa forms, certificates, and other documents</li>
+    <li>✅ Marketing Translation: Advertising materials and marketing collaterals such as user manuals, leaflets, brochures, and promotional items</li>
+    <li>✅ Medical Translation: Clinical trial forms, research reports, doctor-patient information booklets, and leave-behind leaflets</li>
+    <li>✅ Technical, Legal, Commercial, Government, and Financial Translation: Certified agency recognized by the government for providing translation services, approved by ISO for quality standards</li>
+  </ul>
+
+  <h3>Localization Services</h3>
+  <ul>
+    <li>✅ Website Localization from English to Chinese, essential due to the growing number of Chinese-speaking internet users</li>
+    <li>✅ Audio-Visual Localization from English to Chinese, including transcription, translation, storyboarding, voice-over, sub-titling, and post-production</li>
+    <li>✅ Software Localization to make your software support multi-lingual applications and be user-friendly</li>
+  </ul>
+
+  <h3>Contact Us</h3>
+  <p>Send us your enquiries at <a href="mailto:info@bhashabharatiarts.com">info@bhashabharatiarts.com</a> or speak to us by phone at <strong>+91-7066316633</strong> for all your language-related enquiries.</p>
+</div>
+
+
+
+<div id="about-us">
+  <div class="content-wrapper">
+      <div class="column">
+          <h3>ABOUT US</h3>
+          <p>We are ISO 9001:2008, and DIN EN 1508 certified translation agency for maintaining quality standards.</p>
+        
+      </div>
+      <div class="column">
+    <h3>Blog Posts</h3>
+    <ul class="blog-posts">
+        <li><a href="#">How important is Translation in today’s globalized world?</a></li>
+        <li><a href="#">7 Reasons why Translation plays an important role in Education</a></li>
+        <li><a href="#">For Chalta hai translation, Go to Google translation</a></li>
+        <li><a href="#">NAMO Campaign and Digital India</a></li>
+        <li><a href="#">Can Rajini be the political ‘Thaliva’?</a></li>
+        <li><a href="#">How to design website for driving sales?</a></li>
+        <li><a href="#">Translation of Documents for Effective Business</a></li>
+        <li><a href="#">Why Planning for website translation in Hindi will make great sense?</a></li>
+        <li><a href="#">Digital India Demands Web Content in All Indian Languages</a></li>
+        <li><a href="#">Digital India will grow with website localization</a></li>
+        <li><a href="#">Drive the Digital India Wave</a></li>
+    </ul>
+</div>
+<div class="column">
+  <h3>SERVICES & SOLUTIONS</h3>
+  <ul class="services-solutions">
+      <li><a href="#">Translation Services</a></li>
+      <li><a href="#">Localization Services</a></li>
+      <li><a href="#">Interpretation Services</a></li>
+      <li><a href="#">DTP Services</a></li>
+      <li><a href="#">360° Language Solution</a></li>
+      <li><a href="#">Document Translation</a></li>
+  </ul>
+</div>
+
+      <div class="column">
+          <h3>Get Quote</h3>
+          <p>Register for any enquiry and job opportunities</p>
+          <p>Beyond Wordz | Shakti Enterprise</p>
+      </div>
+  </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Translation Services. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

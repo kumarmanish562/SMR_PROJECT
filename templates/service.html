@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div id="nav">
+        <div class="center-nav">
+            <a href="{{ url_for('home') }}" class="nav-link ">Home</a>
+
+            <!-- Dropdown for Service -->
+            <div class="dropdown dropdown-service">
+                <a href="{{ url_for('service') }}" class="nav-link active">Service</a>
+                <div class="dropdown-menu dropdown-grid">
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('medical') }}">Medical Translation Services</a>
+                        <a href="{{ url_for('legal') }}">Legal Translation Services</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('financial') }}">Financial Translation Services</a>
+                        <a href="{{ url_for('certificate') }}">Certificate Translation Services</a>
+                        <a href="{{ url_for('marketing') }}">Marketing Translation Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dropdown for Language -->
+            <div class="dropdown service-language">
+                <a href="{{ url_for('language') }}" class="nav-link ">Language</a>
+                <div class="dropdown-menu dropdown-grid">
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('hindi') }}">Hindi Language</a>
+                        <a href="{{ url_for('english') }}">English Language</a>
+                        <a href="{{ url_for('tamil') }}">Tamil Language</a>
+                        <a href="{{ url_for('punjabi') }}">Punjabi Language</a>
+                        <a href="{{ url_for('kannada') }}">Kannada Language</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('telugu') }}">Telugu Language</a>
+                        <a href="{{ url_for('malayalam') }}">Malayalam Language</a>
+                        <a href="{{ url_for('bengali') }}">Bengali Language</a>
+                        <a href="{{ url_for('marathi') }}">Marathi Language</a>
+                        <a href="{{ url_for('gujarati') }}">Gujarati Language</a>
+                        <a href="{{ url_for('odia') }}">Odia Language</a>
+                        <a href="{{ url_for('assamese') }}">Assamese Language</a>
+                        <a href="{{ url_for('sanskrit') }}">Sanskrit Language</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Translate Now Button -->
+        <button id="translateButton">Translate Now</button>
+    </div>
+
+    <!-- Hero Section with Image -->
+    <div id="hero">
+        <div class="hero-content">
+            <h1>“We offer professional translation services that goes beyond words”</h1>
+        </div>
+    </div>
+
+    <!-- Breadcrumbs Box (Horizontal) -->
+    <div id="breadcrumbs-box">
+      <div id="breadcrumbs">
+          <a href="{{ url_for('home') }}">Home</a> >  <a href="{{ url_for('service') }}">Services</a> 
+      </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="main-content">
+      
+        <div class="content-wrapper">
+            <!-- Left Section with Service List -->
+            <div class="left-section">
+                <ul>
+                  <li><a href="{{ url_for('medical') }}">Medical Translation Services</a></li>
+                  <li><a href="{{ url_for('legal') }}">Legal Translation Services</a></li>
+                  <li><a href="{{ url_for('financial') }}">Financial Translation Services</a></li>
+                  <li><a href="{{ url_for('certificate') }}">Certificate Translation Services</a></li>
+                  <li>  <a href="{{ url_for('marketing') }}">Marketing Translation Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Section for Main Content -->
+            <div class="right-section">
+                <h2>Our Specialization</h2>
+                <p>As the name of our company, Bhasha Bharati, suggests, we specialize in the ‘Bhasha’ of ‘Bharat’ for Translation, Localization, and Interpretation.</p>
+                  
+  <!-- Red Container Box -->
+  <div class="red-container">
+    <p>Whether it is document translation or translation of technical, medical, or marketing subject, we have domain experts to ensure top quality translation.</p>
+  </div>
+
+                <p>We offer our professional translation services into English and all Indian Languages at highly competitive rates and in some cases, at less than 50% of the prevailing market rates in the USA, Canada, UK, and Europe.</p>
+
+                <p>This is possible because of:</p>
+                <ul>
+                    <li>Abundant availability of translator resources with us</li>
+                    <li>Lower operating costs, as we are based in India</li>
+                    <li>Availability of skilled professionals</li>
+                    <li>Use of the latest CAT tools</li>
+                </ul>
+
+                <p>Some of the clients who have retained us as their language partners include Bosch, TATA, Reliance, Netflix, Pfizer, to name a few.</p>
+
+                <p>Due to our strong network of professional translators with industry expertise, our internal quality processes, and the use of translation technology tools, we are able to achieve translation at a highly reduced cost to us. This enables us to offer better rates than the prevalent US and European market without sacrificing the quality of translation in any manner.</p>
+
+                <p>Bhasha Bharati and Shakti Enterprise are ISO 9001:2008 and DIN EN 1508 certified for quality standards. We are also members of ATA (American Translators Association) and ITA (Indian Translators Association).</p>
+
+                <p>We are registered as a vendor for providing Translation Services for most of the UN Organizations.</p>
+
+                <h3>Contact Us</h3>
+                <p>Treat us as your language partner. Reduce your operating cost, save time, and increase your margin. Call us at <strong>+91-7066316633</strong> or email at <a href="mailto:info@bhashabharatiarts.com">info@bhashabharatiarts.com</a> for availing the most attractive offer for translation of your documents from any European language into English.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about-us">
+        <div class="content-wrapper">
+            <div class="column">
+                <h3>ABOUT US</h3>
+                <p>We are ISO 9001:2008, and DIN EN 1508 certified translation agency for maintaining quality standards.</p>
+            </div>
+            <div class="column">
+                <h3>Blog Posts</h3>
+                <ul class="blog-posts">
+                    <li><a href="#">How important is Translation in today’s globalized world?</a></li>
+                    <li><a href="#">7 Reasons why Translation plays an important role in Education</a></li>
+                    <li><a href="#">For Chalta hai translation, Go to Google translation</a></li>
+                    <li><a href="#">NAMO Campaign and Digital India</a></li>
+                    <li><a href="#">Can Rajini be the political ‘Thaliva’?</a></li>
+                    <li><a href="#">How to design website for driving sales?</a></li>
+                    <li><a href="#">Translation of Documents for Effective Business</a></li>
+                    <li><a href="#">Why Planning for website translation in Hindi will make great sense?</a></li>
+                    <li><a href="#">Digital India Demands Web Content in All Indian Languages</a></li>
+                    <li><a href="#">Digital India will grow with website localization</a></li>
+                    <li><a href="#">Drive the Digital India Wave</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>SERVICES & SOLUTIONS</h3>
+                <ul class="services-solutions">
+                    <li><a href="#">Translation Services</a></li>
+                    <li><a href="#">Localization Services</a></li>
+                    <li><a href="#">Interpretation Services</a></li>
+                    <li><a href="#">DTP Services</a></li>
+                    <li><a href="#">360° Language Solution</a></li>
+                    <li><a href="#">Document Translation</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Get Quote</h3>
+                <p>Register for any enquiry and job opportunities</p>
+                <p>Beyond Wordz | Shakti Enterprise</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Translation Services. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

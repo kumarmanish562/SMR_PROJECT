@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div id="nav">
+        <div class="center-nav">
+            <a href="{{ url_for('home') }}" class="nav-link ">Home</a>
+
+            <!-- Dropdown for Service -->
+            <div class="dropdown dropdown-service">
+                <a href="{{ url_for('service') }}" class="nav-link active">Service</a>
+                <div class="dropdown-menu dropdown-grid">
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('medical') }}">Medical Translation Services</a>
+                        <a href="{{ url_for('legal') }}">Legal Translation Services</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('financial') }}">Financial Translation Services</a>
+                        <a href="{{ url_for('certificate') }}">Certificate Translation Services</a>
+                        <a href="{{ url_for('marketing') }}">Marketing Translation Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dropdown for Language -->
+            <div class="dropdown service-language">
+                <a href="{{ url_for('language') }}" class="nav-link ">Language</a>
+                <div class="dropdown-menu dropdown-grid">
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('hindi') }}">Hindi Language</a>
+                        <a href="{{ url_for('english') }}">English Language</a>
+                        <a href="{{ url_for('tamil') }}">Tamil Language</a>
+                        <a href="{{ url_for('punjabi') }}">Punjabi Language</a>
+                        <a href="{{ url_for('kannada') }}">Kannada Language</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('telugu') }}">Telugu Language</a>
+                        <a href="{{ url_for('malayalam') }}">Malayalam Language</a>
+                        <a href="{{ url_for('bengali') }}">Bengali Language</a>
+                        <a href="{{ url_for('marathi') }}">Marathi Language</a>
+                        <a href="{{ url_for('gujarati') }}">Gujarati Language</a>
+                        <a href="{{ url_for('odia') }}">Odia Language</a>
+                        <a href="{{ url_for('assamese') }}">Assamese Language</a>
+                        <a href="{{ url_for('sanskrit') }}">Sanskrit Language</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Translate Now Button -->
+        <button id="translateButton">Translate Now</button>
+    </div>
+
+    <!-- Hero Section with Image -->
+    <div id="hero">
+        <div class="hero-content">
+            <h1>Financial Translation Services</h1>
+        </div>
+    </div>
+
+    <!-- Breadcrumbs Box (Horizontal) -->
+    <div id="breadcrumbs-box">
+      <div id="breadcrumbs">
+          <a href="{{ url_for('home') }}">Home</a> >   <a href="{{ url_for('service') }}">Services</a  > > <a href="{{ url_for('financial') }}">Financial Translation Services</a> 
+      </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="main-content">
+      
+        <div class="content-wrapper">
+            <!-- Left Section with Service List -->
+            <div class="left-section">
+                <ul>
+                  <li><a href="{{ url_for('medical') }}" >Medical Translation Services</a></li>
+                  <li><a href="{{ url_for('legal') }}">Legal Translation Services</a></li>
+                  <li><a href="{{ url_for('financial') }}"  class="active">Financial Translation Services</a></li>
+                  <li><a href="{{ url_for('certificate') }}" >Certificate Translation Services</a></li>
+                  <li>  <a href="{{ url_for('marketing') }}" >Marketing Translation Services</a></li>
+                </ul>
+            </div>
+
+<!-- Right Section for Main Content -->
+<div class="right-section">
+  <h2>Our Specialization</h2>
+  <p>Are your foreign investors facing difficulty in understanding your financial reports? If yes, then you need professional financial translation services, which facilitate smooth communication between two parties. Financial translation solutions can also help your business navigate through various local laws and regulations.</p>
+
+  <p>Working in the financial sector involves high risk. Hence, the translation of financial reports, prospectuses, business agreements, etc. must be performed with utmost care and attention.</p>
+
+  <p>Global gross domestic product (GDP) as of October 2019 was $90 trillion (investopedia).</p>
+
+  <p>Finance has its own terminology, and it keeps getting updated from time to time. The financial translator, therefore, has to be familiar with special financial concepts and keep updated with the latest industry trends.</p>
+
+  <h3>Benefits of Hiring Financial Translation Experts</h3>
+  <ul>
+      <li>They are aware of the impact of numbers and punctuation.</li>
+      <li>They avoid literal translations.</li>
+      <li>They understand financial contexts.</li>
+      <li>They assure confidentiality of work.</li>
+  </ul>
+
+  <p>The market estimates believe that by 2022, the financial services market is expected to reach $26.5 trillion, growing at a rate of 6% during the forecasted period (investopedia).</p>
+
+  <h3>Industries We Support</h3>
+  <ul>
+      <li>Banking</li>
+      <li>Fund Management</li>
+      <li>Insurance</li>
+      <li>Equity and Capital</li>
+      <li>Trading Platforms</li>
+  </ul>
+
+  <h3>We Translate the Following Kinds of Financial Documents</h3>
+  <ul>
+      <li>Annual Reports</li>
+      <li>Prospectus</li>
+      <li>Contracts</li>
+      <li>Financial Agreements</li>
+      <li>Initial Public Offerings</li>
+      <li>Financial Reports</li>
+      <li>Bank Statements</li>
+      <li>Mergers & Acquisitions</li>
+      <li>Shareholder Information</li>
+      <li>Insurance Documents</li>
+      <li>Government Tax Reports</li>
+      <li>Loan Documents</li>
+      <li>Bond Certificates</li>
+      <li>Credit Documents</li>
+  </ul>
+
+  <h3>Professional Financial Translation Services</h3>
+  <p>Looking for the best financial translation services in India? We are happy to help you.</p>
+
+  <p>Bhasha Bharati, a certified financial translation company, provides on-time, highly accurate financial translation services in all commercial languages.</p>
+
+  <p>If you need professional financial translation services and want to incorporate them into your project, contact Bhasha Bharati to get started.</p>
+
+  <p><a href="#">More - Guide to Financial Translation</a></p>
+</div>
+
+
+
+
+    <!-- About Us Section -->
+    <div id="about-us">
+        <div class="content-wrapper">
+            <div class="column">
+                <h3>ABOUT US</h3>
+                <p>We are ISO 9001:2008, and DIN EN 1508 certified translation agency for maintaining quality standards.</p>
+            </div>
+            <div class="column">
+                <h3>Blog Posts</h3>
+                <ul class="blog-posts">
+                    <li><a href="#">How important is Translation in today’s globalized world?</a></li>
+                    <li><a href="#">7 Reasons why Translation plays an important role in Education</a></li>
+                    <li><a href="#">For Chalta hai translation, Go to Google translation</a></li>
+                    <li><a href="#">NAMO Campaign and Digital India</a></li>
+                    <li><a href="#">Can Rajini be the political ‘Thaliva’?</a></li>
+                    <li><a href="#">How to design website for driving sales?</a></li>
+                    <li><a href="#">Translation of Documents for Effective Business</a></li>
+                    <li><a href="#">Why Planning for website translation in Hindi will make great sense?</a></li>
+                    <li><a href="#">Digital India Demands Web Content in All Indian Languages</a></li>
+                    <li><a href="#">Digital India will grow with website localization</a></li>
+                    <li><a href="#">Drive the Digital India Wave</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>SERVICES & SOLUTIONS</h3>
+                <ul class="services-solutions">
+                    <li><a href="#">Translation Services</a></li>
+                    <li><a href="#">Localization Services</a></li>
+                    <li><a href="#">Interpretation Services</a></li>
+                    <li><a href="#">DTP Services</a></li>
+                    <li><a href="#">360° Language Solution</a></li>
+                    <li><a href="#">Document Translation</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Get Quote</h3>
+                <p>Register for any enquiry and job opportunities</p>
+                <p>Beyond Wordz | Shakti Enterprise</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Translation Services. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

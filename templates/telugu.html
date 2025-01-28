@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div id="nav">
+        <div class="center-nav">
+            <a href="{{ url_for('home') }}" class="nav-link ">Home</a>
+
+            <!-- Dropdown for Service -->
+            <div class="dropdown dropdown-service">
+                <a href="{{ url_for('service') }}" class="nav-link">Service</a>
+                <div class="dropdown-menu dropdown-grid">
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('medical') }}">Medical Translation Services</a>
+                        <a href="{{ url_for('legal') }}">Legal Translation Services</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('financial') }}">Financial Translation Services</a>
+                        <a href="{{ url_for('certificate') }}">Certificate Translation Services</a>
+                        <a href="{{ url_for('marketing') }}">Marketing Translation Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dropdown for Language -->
+            <div class="dropdown dropdown-language">
+                <a href="{{ url_for('language') }}" class="nav-link active">Language</a>
+                <div class="dropdown-menu dropdown-grid">
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('hindi') }}">Hindi Language</a>
+                        <a href="{{ url_for('english') }}">English Language</a>
+                        <a href="{{ url_for('tamil') }}">Tamil Language</a>
+                        <a href="{{ url_for('punjabi') }}">Punjabi Language</a>
+                        <a href="{{ url_for('kannada') }}">Kannada Language</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('telugu') }}">Telugu Language</a>
+                        <a href="{{ url_for('malayalam') }}">Malayalam Language</a>
+                        <a href="{{ url_for('bengali') }}">Bengali Language</a>
+                        <a href="{{ url_for('marathi') }}">Marathi Language</a>
+                        <a href="{{ url_for('gujarati') }}">Gujarati Language</a>
+                        <a href="{{ url_for('odia') }}">Odia Language</a>
+                        <a href="{{ url_for('assamese') }}">Assamese Language</a>
+                        <a href="{{ url_for('sanskrit') }}">Sanskrit Language</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Translate Now Button -->
+        <button id="translateButton">Translate Now</button>
+    </div>
+
+    <!-- Hero Section with Image -->
+    <div id="hero">
+        <div class="hero-content">
+           
+            <h1>Telugu Translation</h1>
+        </div>
+    </div>
+
+    <!-- Breadcrumbs Box (Horizontal) -->
+    <div id="breadcrumbs-box">
+      <div id="breadcrumbs">
+          <a href="{{ url_for('home') }}">Home</a> > <a href="{{ url_for('service') }}">Services</a> > <span>Language</span>
+      </div>
+
+
+    <!-- Main Hindi Content Section -->
+    <div id="main-content">
+      
+        <div class="content-wrapper">
+            <!-- Left Section with Language List -->
+            <div class="left-section">
+                <ul>
+                    <li><a href="{{ url_for('hindi') }}" >Hindi Language</a></li>
+                    <li><a href="{{ url_for('english') }}">English Language</a></li>
+                    <li><a href="{{ url_for('tamil') }}">Tamil Language</a></li>
+                    <li><a href="{{ url_for('punjabi') }}">Punjabi Language</a></li>
+                    <li><a href="{{ url_for('kannada') }}">Kannada Language</a></li>
+                    <li><a href="{{ url_for('telugu') }}" class="active">Telugu Language</a></li>
+                    <li><a href="{{ url_for('malayalam') }}">Malayalam Language</a></li>
+                    <li><a href="{{ url_for('bengali') }}">Bengali Language</a></li>
+                    <li><a href="{{ url_for('marathi') }}">Marathi Language</a></li>
+                    <li><a href="{{ url_for('gujarati') }}">Gujarati Language</a></li>
+                    <li><a href="{{ url_for('odia') }}">Odia Language</a></li>
+                    <li><a href="{{ url_for('assamese') }}">Assamese Language</a></li>
+                    <li><a href="{{ url_for('sanskrit') }}">Sanskrit Language</a></li>
+                </ul>
+            </div>
+
+            
+    
+ 
+    <!-- Right Section for Main Content -->
+<div class="right-section">
+  <h2>Language Differs. But Translation Unites.</h2>
+  <p>Telugu is a Dravidian language and is the only language other than Hindi and Bengali that is spoken prominently in more than one Indian state, namely Andhra Pradesh and Telangana. It is also a significant minority language in Karnataka, Tamil Nadu, Maharashtra, Odisha, Chhattisgarh, Puducherry, Andaman and Nicobar Islands in India and in Sri Lanka. Telugu is spoken by significant minorities in the United States, Australia, Canada, New Zealand, Bahrain, Fiji, Malaysia, Ireland, South Africa, Trinidad and Tobago, United Arab Emirates, and the United Kingdom. Telugu is the third most spoken language after Hindi and Bengali in the Indian Sub-continent. There are a total of 75 million native speakers of Telugu language in India and worldwide.</p>
+  <p>Bhasha Bharati Arts offers high-quality, professional Telugu Translation Service with quick turnaround time. Be it general text or domain-specific translation like medical, financial, technical, legal, marketing, or website localization, we have experience and expertise for all your English translation needs.</p>
+
+  <p>At Bhasha Bharati Arts, we believe that translation goes beyond words. We not only translate your words but also your message, your tone, your understated meanings, and your designs. This assures that you get a fully localized version that is produced in compliance with standards and cultural values of your target market.</p>
+
+  <h3>Telugu Translation Services</h3>
+  <p>We are glad to enjoy the trust of leading companies around the world including Pfizer, Robert Bosch India, Accenture, TATA, Lowe Lintas, and more for English to Telugu translation.</p>
+
+  <p>Our translators are bilingual experts with knowledge of both English and Telugu. We have a team of well-qualified and industry-expert bilingual native translators specializing in different domains including technical, medical, tourism, financial, e-Learning, etc. They have the expertise in delivering high-quality Telugu translations in compliance with the culture and other concerns of your target market.</p>
+
+  <h3>Our Project Managers</h3>
+  <p>Our well-trained and dedicated project managers make the whole process smooth for you. They assure that all your requirements and instructions are well communicated with the translators and also monitor the execution of the same. They play a very important part in achieving high-quality translations at the end of the day.</p>
+
+  <h3>Rely on Bhasha for Indian Language Services</h3>
+  <p>Rely on Bhasha Bharati Arts to guide you in your language needs. We are an ISO and DIN certified translation service provider. We engage with native translators for translation to and from English depending upon your market requirement to see that your multilingual communication resonates with the same power of clarity as the source language.</p>
+
+  <h3>Success Comes from Speaking in Customers’ Language</h3>
+  <p>The secret of successful communication lies in speaking in customers’ language and culturally connecting with them. Although English is understood across most nations of the world, it is not the native language for more than 70% of the Asian population. Multilingual communication and Localization help in reaching the Asian market with confidence.</p>
+
+  <h3>Contact Us</h3>
+  <p>Send us your enquiries at 508, Reena Complex, Vidhyavihar, Mumbai 400086 or email us at <a href="mailto:info@bhashabharatiarts.com">info@bhashabharatiarts.com</a> or speak to us by phone at <strong>+91-7066316633</strong> for all your language-related enquiries.</p>
+</div>
+</div>
+</div>
+
+
+
+<div id="about-us">
+  <div class="content-wrapper">
+      <div class="column">
+          <h3>ABOUT US</h3>
+          <p>We are ISO 9001:2008, and DIN EN 1508 certified translation agency for maintaining quality standards.</p>
+        
+      </div>
+      <div class="column">
+    <h3>Blog Posts</h3>
+    <ul class="blog-posts">
+        <li><a href="#">How important is Translation in today’s globalized world?</a></li>
+        <li><a href="#">7 Reasons why Translation plays an important role in Education</a></li>
+        <li><a href="#">For Chalta hai translation, Go to Google translation</a></li>
+        <li><a href="#">NAMO Campaign and Digital India</a></li>
+        <li><a href="#">Can Rajini be the political ‘Thaliva’?</a></li>
+        <li><a href="#">How to design website for driving sales?</a></li>
+        <li><a href="#">Translation of Documents for Effective Business</a></li>
+        <li><a href="#">Why Planning for website translation in Hindi will make great sense?</a></li>
+        <li><a href="#">Digital India Demands Web Content in All Indian Languages</a></li>
+        <li><a href="#">Digital India will grow with website localization</a></li>
+        <li><a href="#">Drive the Digital India Wave</a></li>
+    </ul>
+</div>
+<div class="column">
+  <h3>SERVICES & SOLUTIONS</h3>
+  <ul class="services-solutions">
+      <li><a href="#">Translation Services</a></li>
+      <li><a href="#">Localization Services</a></li>
+      <li><a href="#">Interpretation Services</a></li>
+      <li><a href="#">DTP Services</a></li>
+      <li><a href="#">360° Language Solution</a></li>
+      <li><a href="#">Document Translation</a></li>
+  </ul>
+</div>
+
+      <div class="column">
+          <h3>Get Quote</h3>
+          <p>Register for any enquiry and job opportunities</p>
+          <p>Beyond Wordz | Shakti Enterprise</p>
+      </div>
+  </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Translation Services. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

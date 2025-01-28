@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div id="nav">
+        <div class="center-nav">
+            <a href="{{ url_for('home') }}" class="nav-link ">Home</a>
+
+            <!-- Dropdown for Service -->
+            <div class="dropdown dropdown-service">
+                <a href="{{ url_for('service') }}" class="nav-link">Service</a>
+                <div class="dropdown-menu dropdown-grid">
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('medical') }}">Medical Translation Services</a>
+                        <a href="{{ url_for('legal') }}">Legal Translation Services</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('financial') }}">Financial Translation Services</a>
+                        <a href="{{ url_for('certificate') }}">Certificate Translation Services</a>
+                        <a href="{{ url_for('marketing') }}">Marketing Translation Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dropdown for Language -->
+            <div class="dropdown dropdown-language">
+                <a href="{{ url_for('language') }}" class="nav-link active">Language</a>
+                <div class="dropdown-menu dropdown-grid">
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('hindi') }}">Hindi Language</a>
+                        <a href="{{ url_for('english') }}">English Language</a>
+                        <a href="{{ url_for('tamil') }}">Tamil Language</a>
+                        <a href="{{ url_for('punjabi') }}">Punjabi Language</a>
+                        <a href="{{ url_for('kannada') }}">Kannada Language</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('telugu') }}">Telugu Language</a>
+                        <a href="{{ url_for('malayalam') }}">Malayalam Language</a>
+                        <a href="{{ url_for('bengali') }}">Bengali Language</a>
+                        <a href="{{ url_for('marathi') }}">Marathi Language</a>
+                        <a href="{{ url_for('gujarati') }}">Gujarati Language</a>
+                        <a href="{{ url_for('odia') }}">Odia Language</a>
+                        <a href="{{ url_for('assamese') }}">Assamese Language</a>
+                        <a href="{{ url_for('sanskrit') }}">Sanskrit Language</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Translate Now Button -->
+        <button id="translateButton">Translate Now</button>
+    </div>
+
+    <!-- Hero Section with Image -->
+    <div id="hero">
+        <div class="hero-content">
+           
+            <h1>Malayalam Translation</h1>
+        </div>
+    </div>
+
+    <!-- Breadcrumbs Box (Horizontal) -->
+    <div id="breadcrumbs-box">
+      <div id="breadcrumbs">
+          <a href="{{ url_for('home') }}">Home</a> > <a href="{{ url_for('service') }}">Services</a> > <span>Language</span>
+      </div>
+
+
+    <!-- Main Hindi Content Section -->
+    <div id="main-content">
+      
+        <div class="content-wrapper">
+            <!-- Left Section with Language List -->
+            <div class="left-section">
+                <ul>
+                    <li><a href="{{ url_for('hindi') }}" >Hindi Language</a></li>
+                    <li><a href="{{ url_for('english') }}">English Language</a></li>
+                    <li><a href="{{ url_for('tamil') }}">Tamil Language</a></li>
+                    <li><a href="{{ url_for('punjabi') }}">Punjabi Language</a></li>
+                    <li><a href="{{ url_for('kannada') }}">Kannada Language</a></li>
+                    <li><a href="{{ url_for('telugu') }}">Telugu Language</a></li>
+                    <li><a href="{{ url_for('malayalam') }}" class="active">Malayalam Language</a></li>
+                    <li><a href="{{ url_for('bengali') }}">Bengali Language</a></li>
+                    <li><a href="{{ url_for('marathi') }}">Marathi Language</a></li>
+                    <li><a href="{{ url_for('gujarati') }}">Gujarati Language</a></li>
+                    <li><a href="{{ url_for('odia') }}">Odia Language</a></li>
+                    <li><a href="{{ url_for('assamese') }}">Assamese Language</a></li>
+                    <li><a href="{{ url_for('sanskrit') }}">Sanskrit Language</a></li>
+                </ul>
+            </div>
+
+            
+    
+ 
+  <!-- Right Section for Main Content -->
+<div class="right-section">
+  <h2>Language Differs. But Translation Unites.</h2>
+  <p>Malayalam is a Dravidian language spoken prominently in the state of Kerala in India. It is also spoken in Lakshadweep and Mahe. It is one of the 22 official languages of India. Malayalam is the official language in the State of Kerala, Lakshadweep and Mahe District in the Union territory of Puducherry. There were a total of 38 million native speakers of Malayalam language speakers in India as per census 2011.</p>
+  <p>A large number of Malayalees have migrated to Middle East, United States, and Europe. Malayalam is a classical language. Malayalam incorporated many words from Sanskrit language. Malayalam most likely originated from Tamil in the 6th century.</p>
+
+  <h3>Other Important Facts about Malayalam Language:</h3>
+  <ul>
+    <li>✅ Malayalam is one of the 22 official languages of India.</li>
+    <li>✅ Malayalam is the official language of Kerala, Lakshadweep, and Mahe.</li>
+    <li>✅ The total number of Malayalam speakers in India is over 38 million, according to the 2011 census.</li>
+    <li>✅ Malayalam is considered a classical language of India.</li>
+    <li>✅ A significant number of Malayalees have migrated to various countries across the world.</li>
+  </ul>
+
+  <h3>Language Services</h3>
+  <ul>
+    <li>✅ Malayalam Translation</li>
+    <li>✅ Translation from Asian Languages to Malayalam and English</li>
+    <li>✅ Translation from European Languages to Malayalam and English</li>
+    <li>✅ Translation from Indian Regional Languages to Malayalam and English.</li>
+  </ul>
+
+  <h3>Client Served</h3>
+  <p>Demand for Malayalam translation service comes from various sectors including government departments, educational institutions, financial institutions, legal firms, NGOs, and multinational companies.</p>
+
+  <h3>Key Industries in Malayalam-speaking regions</h3>
+  <ul>
+    <li>✅ Banking, Finance, and Insurance</li>
+    <li>✅ Healthcare and Medical Services</li>
+    <li>✅ IT and ITes</li>
+    <li>✅ Tourism and Travel</li>
+    <li>✅ Construction</li>
+    <li>✅ Education and Research</li>
+    <li>✅ Media and Entertainment</li>
+    <li>✅ Retail and Consumer Goods</li>
+    <li>✅ Agriculture and Food Processing</li>
+  </ul>
+
+  <h3>Our Services</h3>
+  <ul>
+    <li>✅ Professional Translation in Malayalam</li>
+    <li>✅ Website Localization in Malayalam</li>
+    <li>✅ Medical Translation in Malayalam</li>
+    <li>✅ Marketing Translation in Malayalam</li>
+    <li>✅ Voice-Over and Sub-titling in Malayalam</li>
+    <li>✅ Interpretation Service in Malayalam</li>
+    <li>✅ Translation from Malayalam to English and other languages</li>
+  </ul>
+
+  <h3>Success comes from speaking in customers’ Language</h3>
+  <p>The secret of successful communication lies in speaking in customers’ language and culturally connecting with them. Although English is understood across most nations of the world, it is not the native language for more than 70% of the Asian population. Multi-lingual communication and Localization helps in reaching the Asian market with confidence.</p>
+
+  <p><strong>Successfully delivered English to Malayalam translation projects for Pfizer, Robert Bosch India, Accenture, TATA, Lowe Lintas, and many more.</strong></p>
+  
+  <h3>Contact Information</h3>
+  <p>Send us your enquiries at <a href="mailto:info@manishkumar562@gmail.com">info@bhashabharatiarts.com</a> or speak to us by phone at <strong>+91-7066316633</strong> for all your language-related enquiries.</p>
+</div>
+</div>
+</div>
+
+
+
+<div id="about-us">
+  <div class="content-wrapper">
+      <div class="column">
+          <h3>ABOUT US</h3>
+          <p>We are ISO 9001:2008, and DIN EN 1508 certified translation agency for maintaining quality standards.</p>
+        
+      </div>
+      <div class="column">
+    <h3>Blog Posts</h3>
+    <ul class="blog-posts">
+        <li><a href="#">How important is Translation in today’s globalized world?</a></li>
+        <li><a href="#">7 Reasons why Translation plays an important role in Education</a></li>
+        <li><a href="#">For Chalta hai translation, Go to Google translation</a></li>
+        <li><a href="#">NAMO Campaign and Digital India</a></li>
+        <li><a href="#">Can Rajini be the political ‘Thaliva’?</a></li>
+        <li><a href="#">How to design website for driving sales?</a></li>
+        <li><a href="#">Translation of Documents for Effective Business</a></li>
+        <li><a href="#">Why Planning for website translation in Hindi will make great sense?</a></li>
+        <li><a href="#">Digital India Demands Web Content in All Indian Languages</a></li>
+        <li><a href="#">Digital India will grow with website localization</a></li>
+        <li><a href="#">Drive the Digital India Wave</a></li>
+    </ul>
+</div>
+<div class="column">
+  <h3>SERVICES & SOLUTIONS</h3>
+  <ul class="services-solutions">
+      <li><a href="#">Translation Services</a></li>
+      <li><a href="#">Localization Services</a></li>
+      <li><a href="#">Interpretation Services</a></li>
+      <li><a href="#">DTP Services</a></li>
+      <li><a href="#">360° Language Solution</a></li>
+      <li><a href="#">Document Translation</a></li>
+  </ul>
+</div>
+
+      <div class="column">
+          <h3>Get Quote</h3>
+          <p>Register for any enquiry and job opportunities</p>
+          <p>Beyond Wordz | Shakti Enterprise</p>
+      </div>
+  </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Translation Services. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -6,21 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>languahe translate</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+   
 </head>
 
 <body>
+   
+        
     <div id="nav">
         
-        <div id="center-nav">
-            <a href="#">Home </a>
-            <a href="#">Service</a>
-            <a href="#">Language</a>
-            
+        <div class="center-nav">
+            <a href="{{ url_for('home') }}" class="nav-link active">Home</a>
+    
+            <!-- Dropdown for Service -->
+            <div class="dropdown dropdown-service">
+                <a href="{{ url_for('service') }}" class="nav-link">Service</a>
+                <div class="dropdown-menu dropdown-grid">
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('medical') }}">Medical Translation Services</a>
+                        <a href="{{ url_for('legal') }}">Legal Translation Services</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('financial') }}">Financial Translation Services</a>
+                        <a href="{{ url_for('certificate') }}">Certificate Translation Services</a>
+                        <a href="{{ url_for('marketing') }}">Marketing Translation Services</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Dropdown for Language -->
+            <div class="dropdown dropdown-language">
+                <a href="{{ url_for('language') }}" class="nav-link">Language</a>
+                <div class="dropdown-menu dropdown-grid">
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('hindi') }}">Hindi Language</a>
+                        <a href="{{ url_for('english') }}">English Language</a>
+                        <a href="{{ url_for('tamil') }}">Tamil Language</a>
+                        <a href="{{ url_for('punjabi') }}">Punjabi Language</a>
+                        <a href="{{ url_for('kannada') }}">Kannada Language</a>
+                    </div>
+                    <div class="dropdown-column">
+                        <a href="{{ url_for('telugu') }}">Telugu Language</a>
+                        <a href="{{ url_for('malayalam') }}">Malayalam Language</a>
+                        <a href="{{ url_for('bengali') }}">Bengali Language</a>
+                        <a href="{{ url_for('marathi') }}">Marathi Language</a>
+                        <a href="{{ url_for('gujarati') }}">Gujarati Language</a>
+                        <a href="{{ url_for('odia') }}">Odia Language</a>
+                        <a href="{{ url_for('assamese') }}">Assamese Language</a>
+                        <a href="{{ url_for('sanskrit') }}">Sanskrit Language</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <button>Translate Now</button>
+    
+        <!-- Translate Now Button -->
+        <button id="translateButton">Translate Now</button>
     </div>
+    
+    
+    
     <div id="main">
         <div id="page">
             <h1>Language Translation
@@ -34,8 +81,8 @@
             <canvas></canvas>
         </div>
             <div id="page1">
-                <button id=btn1>Get a free quote</button>
-               <button id=btn2>Contact us</button>
+                <button id="btn1">Get a free quote</button>
+               <button id="btn2">Contact us</button>
                <h1>Translating Words<br> into Success</h1>
                <h4> "Accurate and seamless translation services bridging <br>languages and cultures worldwide." </h4>
         </div>
@@ -53,7 +100,7 @@
         <div id="page5">
             <div id="center-page5">
                 <div id="left-page5">
-                 <img src="assests/13181.jpg" alt="">
+                    <img src="../static/assests/13181.jpg">
                 </div>
                 <div id="right-page5">
                     <h1>
@@ -63,11 +110,7 @@
                             <br>
                             • World Languages:
                             Diversity, connection, cultures, communication, linguistics, globalization, interaction, speech, translation, multicultural.<br>
-                            •Interpreter:
-                            Verbal, communication, real-time, accuracy, fluency, multilingual, technology, dialogue, meetings, conferences.
-                            <br>
-                            •Dictionaries :
-                            Vocabulary, words, definitions, synonyms, resources, reference, language, understanding, learning, pronunciation.</h4>
+                            
                             <button>Find out more</button>
 
                            
@@ -82,12 +125,12 @@
                 </h4>
             </div>
             <div class="right-page6">
-                <video src="assests/8814706-sd_360_640_25fps.mp4" autoplay loop muted ></video>
+                <video src="../static/assests/8814706-sd_360_640_25fps.mp4 " autoplay loop muted></video>
             </div>
         </div>
         <div id="page7">
             <div class="right-page7">
-                <video src="assests/6101337-uhd_4096_2160_30fps.mp4" autoplay loop muted ></video>
+                <video src="../static/assests/6101337-uhd_4096_2160_30fps.mp4" autoplay loop muted></video>
             </div>
             <div class="left-page7">
                 <h1>Advancements in Translation Technology</h1>
@@ -101,7 +144,7 @@
                 </h4>
             </div>
             <div class="right-page8">
-                <video src="assests/8134446-uhd_4096_2160_25fps.mp4" autoplay loop muted "></video>
+                <video src="../static/assests/8134446-uhd_4096_2160_25fps.mp4" autoplay loop muted></video>
         </div>
     </div>
 
@@ -112,7 +155,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
         integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
+    <script src="../static/js/script.js"></script>
 </body>
 
 </html>
